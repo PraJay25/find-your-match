@@ -1,9 +1,25 @@
 {
-  "extends": "../../packages/tsconfig/tsconfig.json",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "jsx": "react-jsx",
-    "types": ["nativewind/types"]
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["react-native"]
   },
-  "include": ["app", "src"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
 
