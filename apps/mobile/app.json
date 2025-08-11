@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "FindYourMatch",
+    "slug": "find-your-match",
+    "scheme": "findyourmatch",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "sdkVersion": "53.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "newArchEnabled": false,
+    "android": {
+      "package": "com.anonymous.findyourmatch"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.findyourmatch"
+    }
+  }
+}

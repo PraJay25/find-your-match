@@ -1,0 +1,42 @@
+{
+  "name": "mobile",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start -c",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "lint": "eslint .",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@find/api-client": "file:../../packages/api-client",
+    "@find/shared": "file:../../packages/shared",
+    "@tanstack/react-query": "^5.50.0",
+    "axios": "^1.7.0",
+    "expo": "~53.0.0",
+    "expo-linking": "^7.1.7",
+    "expo-router": "~5.1.4",
+    "jest-expo": "~53.0.9",
+    "nativewind": "^4.0.36",
+    "react": "^19.0.0",
+    "react-native": "^0.79.5",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "^15.11.2",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.5.2",
+    "@types/react": "~19.0.10",
+    "@types/react-native": "^0.73.0",
+    "eslint": "^9.7.0",
+    "jest-expo": "~51.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "~5.8.3"
+  }
+}

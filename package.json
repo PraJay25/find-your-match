@@ -1,0 +1,43 @@
+{
+    "name": "find-your-match",
+    "private": true,
+    "packageManager": "pnpm@9.6.0",
+    "workspaces": [
+      "apps/*",
+      "packages/*"
+    ],
+    "scripts": {
+      "build:all": "turbo run build",
+      "dev:apps": "turbo run dev --filter=./apps/* --parallel",
+      "lint:all": "turbo run lint",
+      "test:all": "turbo run test",
+      "typecheck:all": "turbo run typecheck",
+      "dev:api": "npm run --workspace=api dev",
+      "dev:mobile": "npm run --workspace=mobile dev",
+      "dev:mobile:offline": "npm run --workspace=mobile dev -- --offline -c",
+      "dev:both": "bash -c 'npm run --workspace=api dev & npm run --workspace=mobile dev'",
+      "prepare": "husky install"
+    },
+    "devDependencies": {
+      "turbo": "^2.0.0",
+      "husky": "^9.0.0",
+      "lint-staged": "^15.2.0",
+      "prettier": "^3.3.0",
+      "eslint": "^8.57.0",
+      "@typescript-eslint/eslint-plugin": "^7.18.0",
+      "@typescript-eslint/parser": "^7.18.0",
+      "eslint-plugin-react": "^7.34.1",
+      "eslint-plugin-react-hooks": "^4.6.2",
+      "eslint-plugin-react-native": "^4.1.0",
+      "eslint-plugin-jest": "^27.9.0"
+    },
+    "lint-staged": {
+      "*.{ts,tsx,js,jsx}": [
+        "prettier --write",
+        "eslint --fix"
+      ],
+      "*.{json,md,yml,yaml}": [
+        "prettier --write"
+      ]
+    }
+  }
