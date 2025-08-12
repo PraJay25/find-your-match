@@ -21,6 +21,45 @@ export const countries: PreferenceOption[] = [
   { value: 'CH', label: 'Switzerland', icon: '🇨🇭' },
   { value: 'AT', label: 'Austria', icon: '🇦🇹' },
   { value: 'BE', label: 'Belgium', icon: '🇧🇪' },
+  { value: 'IE', label: 'Ireland', icon: '🇮🇪' },
+  { value: 'NZ', label: 'New Zealand', icon: '🇳🇿' },
+  { value: 'SG', label: 'Singapore', icon: '🇸🇬' },
+  { value: 'HK', label: 'Hong Kong', icon: '🇭🇰' },
+  { value: 'KR', label: 'South Korea', icon: '🇰🇷' },
+  { value: 'CN', label: 'China', icon: '🇨🇳' },
+  { value: 'RU', label: 'Russia', icon: '🇷🇺' },
+  { value: 'PL', label: 'Poland', icon: '🇵🇱' },
+  { value: 'CZ', label: 'Czech Republic', icon: '🇨🇿' },
+  { value: 'HU', label: 'Hungary', icon: '🇭🇺' },
+  { value: 'TR', label: 'Turkey', icon: '🇹🇷' },
+  { value: 'GR', label: 'Greece', icon: '🇬🇷' },
+  { value: 'PT', label: 'Portugal', icon: '🇵🇹' },
+  { value: 'IL', label: 'Israel', icon: '🇮🇱' },
+  { value: 'AE', label: 'United Arab Emirates', icon: '🇦🇪' },
+  { value: 'SA', label: 'Saudi Arabia', icon: '🇸🇦' },
+  { value: 'ZA', label: 'South Africa', icon: '🇿🇦' },
+  { value: 'EG', label: 'Egypt', icon: '🇪🇬' },
+  { value: 'NG', label: 'Nigeria', icon: '🇳🇬' },
+  { value: 'KE', label: 'Kenya', icon: '🇰🇪' },
+  { value: 'TH', label: 'Thailand', icon: '🇹🇭' },
+  { value: 'VN', label: 'Vietnam', icon: '🇻🇳' },
+  { value: 'MY', label: 'Malaysia', icon: '🇲🇾' },
+  { value: 'ID', label: 'Indonesia', icon: '🇮🇩' },
+  { value: 'PH', label: 'Philippines', icon: '🇵🇭' },
+  { value: 'AR', label: 'Argentina', icon: '🇦🇷' },
+  { value: 'CL', label: 'Chile', icon: '🇨🇱' },
+  { value: 'CO', label: 'Colombia', icon: '🇨🇴' },
+  { value: 'PE', label: 'Peru', icon: '🇵🇪' },
+  { value: 'VE', label: 'Venezuela', icon: '🇻🇪' },
+];
+
+export const ageRanges: PreferenceOption[] = [
+  { value: '18-25', label: '18-25 years', icon: '🎓' },
+  { value: '26-35', label: '26-35 years', icon: '💼' },
+  { value: '36-45', label: '36-45 years', icon: '🏠' },
+  { value: '46-55', label: '46-55 years', icon: '🌟' },
+  { value: '56-65', label: '56-65 years', icon: '🎯' },
+  { value: '65+', label: '65+ years', icon: '👴' },
 ];
 
 export const interests: PreferenceOption[] = [
@@ -82,7 +121,28 @@ export const genderPreferences: PreferenceOption[] = [
   { value: 'male', label: 'Men', icon: '👨' },
   { value: 'female', label: 'Women', icon: '👩' },
   { value: 'non-binary', label: 'Non-binary', icon: '⚧' },
+  { value: 'transgender', label: 'Transgender', icon: '🏳️‍⚧️' },
   { value: 'all', label: 'All Genders', icon: '🌈' },
+];
+
+export const importanceLevels: PreferenceOption[] = [
+  { value: 'very_important', label: 'Very Important', icon: '🔴' },
+  { value: 'important', label: 'Important', icon: '🟠' },
+  { value: 'somewhat_important', label: 'Somewhat Important', icon: '🟡' },
+  { value: 'not_important', label: 'Not Important', icon: '🟢' },
+];
+
+export const searchRadiusOptions: PreferenceOption[] = [
+  { value: 'local', label: 'Local (Same City)', icon: '🏘️' },
+  { value: 'regional', label: 'Regional (Same State/Province)', icon: '🗺️' },
+  { value: 'national', label: 'National (Same Country)', icon: '🇺🇸' },
+  { value: 'international', label: 'International (Anywhere)', icon: '🌍' },
+];
+
+export const matchQualityOptions: PreferenceOption[] = [
+  { value: 'high', label: 'High Quality Matches', icon: '⭐' },
+  { value: 'medium', label: 'Balanced Matches', icon: '⚖️' },
+  { value: 'low', label: 'More Options', icon: '📈' },
 ];
 
 export const communicationStyles: PreferenceOption[] = [
@@ -149,6 +209,13 @@ export const messagePrivacyOptions: PreferenceOption[] = [
   { value: 'friends_only', label: 'Friends Only', icon: '👥' },
 ];
 
+export const languageProficiency: PreferenceOption[] = [
+  { value: 'basic', label: 'Basic', icon: '📚' },
+  { value: 'conversational', label: 'Conversational', icon: '💬' },
+  { value: 'fluent', label: 'Fluent', icon: '🗣️' },
+  { value: 'native', label: 'Native', icon: '🏠' },
+];
+
 export const languages: PreferenceOption[] = [
   { value: 'english', label: 'English', icon: '🇺🇸' },
   { value: 'spanish', label: 'Spanish', icon: '🇪🇸' },
@@ -159,7 +226,7 @@ export const languages: PreferenceOption[] = [
   { value: 'russian', label: 'Russian', icon: '🇷🇺' },
   { value: 'japanese', label: 'Japanese', icon: '🇯🇵' },
   { value: 'korean', label: 'Korean', icon: '🇰🇷' },
-  { value: 'chinese', label: 'Chinese', icon: '🇨🇳' },
+  { value: 'chinese', label: 'Chinese (Mandarin)', icon: '🇨🇳' },
   { value: 'arabic', label: 'Arabic', icon: '🇸🇦' },
   { value: 'hindi', label: 'Hindi', icon: '🇮🇳' },
   { value: 'dutch', label: 'Dutch', icon: '🇳🇱' },
@@ -171,4 +238,20 @@ export const languages: PreferenceOption[] = [
   { value: 'czech', label: 'Czech', icon: '🇨🇿' },
   { value: 'hungarian', label: 'Hungarian', icon: '🇭🇺' },
   { value: 'turkish', label: 'Turkish', icon: '🇹🇷' },
+  { value: 'greek', label: 'Greek', icon: '🇬🇷' },
+  { value: 'hebrew', label: 'Hebrew', icon: '🇮🇱' },
+  { value: 'thai', label: 'Thai', icon: '🇹🇭' },
+  { value: 'vietnamese', label: 'Vietnamese', icon: '🇻🇳' },
+  { value: 'malay', label: 'Malay', icon: '🇲🇾' },
+  { value: 'indonesian', label: 'Indonesian', icon: '🇮🇩' },
+  { value: 'filipino', label: 'Filipino', icon: '🇵🇭' },
+  { value: 'urdu', label: 'Urdu', icon: '🇵🇰' },
+  { value: 'bengali', label: 'Bengali', icon: '🇧🇩' },
+  { value: 'tamil', label: 'Tamil', icon: '🇮🇳' },
+  { value: 'telugu', label: 'Telugu', icon: '🇮🇳' },
+  { value: 'marathi', label: 'Marathi', icon: '🇮🇳' },
+  { value: 'gujarati', label: 'Gujarati', icon: '🇮🇳' },
+  { value: 'kannada', label: 'Kannada', icon: '🇮🇳' },
+  { value: 'malayalam', label: 'Malayalam', icon: '🇮🇳' },
+  { value: 'punjabi', label: 'Punjabi', icon: '🇮🇳' },
 ];

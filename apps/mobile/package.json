@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@expo/webpack-config": "^19.0.1",
     "@find/api-client": "file:../../packages/api-client",
     "@find/shared": "file:../../packages/shared",
     "@tanstack/react-query": "^5.50.0",
@@ -21,12 +22,14 @@
     "jest-expo": "~53.0.9",
     "nativewind": "^4.0.36",
     "react": "^19.0.0",
+    "react-dom": "^19.1.1",
     "react-native": "^0.79.5",
     "react-native-gesture-handler": "~2.24.0",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-screens": "~4.11.1",
     "react-native-svg": "^15.11.2",
+    "react-native-web": "^0.21.0",
     "zustand": "^4.5.0"
   },
   "devDependencies": {
