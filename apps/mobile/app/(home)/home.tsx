@@ -208,12 +208,13 @@ export default function Home() {
             <View style={styles.profileCard}>
               <Text style={styles.settingsTitle}>Settings</Text>
               <View style={styles.settingsList}>
-                {[
-                  { label: 'Notifications', value: 'On', icon: '🔔' },
-                  { label: 'Location', value: 'New York', icon: '📍' },
-                  { label: 'Privacy', value: 'Public', icon: '🔒' },
-                  { label: 'Help & Support', value: '', icon: '❓' }
-                ].map((item, index) => (
+                                 {[
+                   { label: 'Notifications', value: 'On', icon: '🔔' },
+                   { label: 'Location', value: 'New York', icon: '📍' },
+                   { label: 'Privacy', value: 'Public', icon: '🔒' },
+                   { label: 'Matching Preferences', value: '', icon: '⚙️' },
+                   { label: 'Help & Support', value: '', icon: '❓' }
+                 ].map((item, index) => (
                   <TouchableOpacity key={index} style={styles.settingItem} activeOpacity={0.7}>
                     <View style={styles.settingLeft}>
                       <Text style={styles.settingIcon}>{item.icon}</Text>
